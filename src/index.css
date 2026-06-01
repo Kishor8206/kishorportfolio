@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Outfit:wght@200;300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-bg: #030014;
+  --color-cyber-card: rgba(8, 7, 24, 0.65);
+  --color-cyber-border: rgba(255, 255, 255, 0.08);
+  --color-cyber-blue: #00f2fe;
+  --color-cyber-purple: #8a2be2;
+  --color-cyber-pink: #ff007f;
+  --color-cyber-cyan: #00ffff;
+  
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  
+  --animate-neon-pulse: neon-pulse 3s infinite alternate;
+  --animate-float: float-animation 6s ease-in-out infinite;
+  --animate-cyber-grid: grid-drift 24s linear infinite;
+  --animate-pulse-glow: pulse-glow 2s infinite alternate;
+}
+
+@keyframes neon-pulse {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 242, 254, 0.2), 0 0 15px rgba(138, 43, 226, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.6), 0 0 35px rgba(138, 43, 226, 0.6);
+  }
+}
+
+@keyframes float-animation {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+}
+
+@keyframes grid-drift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 1000px;
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(1.02);
+  }
+}
+
+/* Global Reset & Base */
+html {
+  scroll-behavior: smooth;
+  background-color: #030014;
+  color: #f3f4f6;
+  font-family: "Outfit", sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Selection Color */
+::selection {
+  background-color: rgba(0, 242, 254, 0.3);
+  color: #ffffff;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030014;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8a2be2, #00f2fe);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff007f, #00ffff);
+}
+
+/* Custom Glassmorphism Styles */
+.glass-panel {
+  background: rgba(8, 7, 24, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.glass-panel:hover {
+  border-color: rgba(0, 242, 254, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 242, 254, 0.15);
+}
+
+.glass-panel-neon {
+  background: rgba(8, 7, 24, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(138, 43, 226, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(138, 43, 226, 0.15);
+}
+
+.glass-panel-neon:hover {
+  border-color: rgba(0, 242, 254, 0.5);
+  box-shadow: 0 0 25px rgba(0, 242, 254, 0.25), 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Interactive background grid */
+.cyber-grid {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center;
+}
+
+/* Glowing text effects */
+.glow-text-cyan {
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.6), 0 0 20px rgba(0, 242, 254, 0.2);
+}
+
+.glow-text-purple {
+  text-shadow: 0 0 10px rgba(138, 43, 226, 0.6), 0 0 20px rgba(138, 43, 226, 0.2);
+}
+
+.glow-text-pink {
+  text-shadow: 0 0 10px rgba(255, 0, 127, 0.6), 0 0 20px rgba(255, 0, 127, 0.2);
+}
+
+/* Neon buttons */
+.btn-neon-blue {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #00f2fe;
+  color: #fff;
+  background: rgba(0, 242, 254, 0.05);
+}
+
+.btn-neon-blue:hover {
+  background: #00f2fe;
+  color: #030014;
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.6);
+}
+
+.btn-neon-purple {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #8a2be2;
+  color: #fff;
+  background: rgba(138, 43, 226, 0.05);
+}
+
+.btn-neon-purple:hover {
+  background: #8a2be2;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+}
+
+/* Hide defaults */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

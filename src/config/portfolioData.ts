@@ -73,8 +73,8 @@ export const portfolioData = {
     college: "Sri Eshwar College of Engineering",
     aboutSummary: "I am a passionate Computer Science and Business Systems (CSBS) student with a strong foundation in full-stack development, database architecture, and business analytics. I excel at bridging the gap between technical execution and business strategy, building systems that are robust, scalable, and impact-driven. From deep algorithmic solutions in Java and C++ to modern Web applications with the MERN stack and AI integrations, I thrive on solving complex real-world challenges.",
     stats: [
-      { label: "LeetCode Problems", value: "250+", rating: "1530 Rating" },
-      { label: "CGPA (B.Tech CSBS)", value: "7.97", subtitle: "Up to 6th Sem" },
+      { label: "LeetCode Problems", value: "20+", rating: "1530 Rating" },
+      { label: "CGPA (B.Tech CSBS)", value: "8.00", subtitle: "Up to 6th Sem" },
       { label: "Hackathons Won", value: "Multiple", subtitle: "1st Positions" },
       { label: "Internships Done", value: "3", subtitle: "Industry Experience" }
     ]
@@ -148,8 +148,8 @@ export const portfolioData = {
       description: "Premium learning platform UI clone featuring elegant responsive structures.",
       longDescription: "A high-fidelity learning platform UI clone featuring an ultra-responsive design, visual media playback panels, interactive course structures, progress tracking interfaces, and detailed dashboard analytics mimicking the full Udemy learner experience.",
       date: "April 2025",
-      github: "https://github.com/KishorS-06/Udmy_clone",
-      demo: "https://udemyclone-ashy.vercel.app/",
+      github: "https://udemyclone-ashy.vercel.app/",
+      demo: "https://github.com/KishorS-06/Udmy_clone",
       techStack: ["React.js", "Framer Motion", "Tailwind CSS", "Lucide Icons"],
       category: "Full Stack",
       glowColor: "from-purple-500 to-pink-500",

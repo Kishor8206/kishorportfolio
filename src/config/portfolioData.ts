@@ -68,7 +68,7 @@ export const portfolioData = {
     github: "https://github.com/KishorS-06",
     linkedin: "https://www.linkedin.com/in/kishor-s-365706291", // standard customisable link
     leetcode: "https://leetcode.com/u/KISHOR_S_06/", // standard customisable link
-    resumeUrl: "https://drive.google.com/file/d/1knYzAhBkkOdFIsnoNoC4jfvWJjBK_FuY/view?usp=drive_link", // User can change this to actual resume download link
+    resumeUrl: "https://drive.google.com/file/d/1ngJeX413mGuUuW1UlZxj6CM6k71ytdgG/view?usp=sharing", // User can change this to actual resume download link
     location: "Tamil Nadu, India",
     college: "Sri Eshwar College of Engineering",
     aboutSummary: "I am a passionate Computer Science and Business Systems (CSBS) student with a strong foundation in full-stack development, database architecture, and business analytics. I excel at bridging the gap between technical execution and business strategy, building systems that are robust, scalable, and impact-driven. From deep algorithmic solutions in Java and C++ to modern Web applications with the MERN stack and AI integrations, I thrive on solving complex real-world challenges.",

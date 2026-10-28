@@ -89,7 +89,7 @@ export const About: React.FC = () => {
               <div className="flex flex-wrap gap-4 text-xs font-mono text-slate-400">
                 <span className="px-3 py-1 rounded bg-white/5 border border-white/5">INSTITUTION: Sri Eshwar College of Engineering</span>
                 <span className="px-3 py-1 rounded bg-white/5 border border-white/5">BATCH: 2023 - 2027</span>
-                <span className="px-3 py-1 rounded bg-white/5 border border-white/5">CGPA: 8.04</span>
+                <span className="px-3 py-1 rounded bg-white/5 border border-white/5">CGPA: 8.00</span>
               </div>
             </motion.div>
 

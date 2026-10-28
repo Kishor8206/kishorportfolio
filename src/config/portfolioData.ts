@@ -280,7 +280,7 @@ export const portfolioData = {
     {
       institution: "Sri Eshwar College of Engineering",
       degree: "B.Tech in Computer Science and Business Systems (CSBS)",
-      score: "CGPA: 7.97 (Up to 6th Semester)",
+      score: "CGPA: 8.00 (Up to 6th Semester)",
       date: "2023 - 2027",
       details: "Rigorous training combining advanced computer science algorithms, database systems, web architectures, and strategic business administration principles."
     },
